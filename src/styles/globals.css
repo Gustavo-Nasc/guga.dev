@@ -14,3 +14,8 @@
     --radius-lg: var(--radius);
     --radius-xl: calc(var(--radius) + 4px);
 }
+
+@theme font {
+    --font-primary: "Inter, sans-serif";
+    --font-secondary: "JetBrains Mono, sans-serif"
+}
