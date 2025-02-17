@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
+@plugin "tailwind-scrollbar" {
+    nocompatible: true;
+    preferredStrategy: 'pseudoelements';
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -15,7 +19,7 @@
     --radius-xl: calc(var(--radius) + 4px);
 }
 
-@theme font {
+@theme font-family {
     --font-primary: "Inter, sans-serif";
-    --font-secondary: "JetBrains Mono, sans-serif"
+    --font-secondary: "JetBrains Mono, sans-serif";
 }
